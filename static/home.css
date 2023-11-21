@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body{
+    padding: 20px;
+    background-color:#499557;
+    color: white;
+}
+.container {
+    display: flex;
+    column-gap: 15px;
+}
+text{
+ width: 40px;
+ font-weight: bold;
+}
+
+textarea{
+    border: solid;
+    height: 200px ;
+    width: 200%;
+    resize: none;
+}
+.form-control{
+    border: solid;
+    border-color: gray;
+
+}
+.btn{
+    margin-left: 570px;
+}
+.btn-primary{
+    margin-top: 10px;
+    width:fit-content;
+    padding-top: 60%;
+}
+
+.c1 {
+    width: 50%;
+    height: 200px;
+    float: left;
+    border-right: #ffffff00;
+    padding: 2px 2px 8px;
+    font-size: 16px;
+}
+.c2 {
+    width: 50%;
+    height: 200px;
+    float: right;
+    column-gap: normal;
+    padding: 2px 2px 8px;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 90vh;
+    
+    position:relative
+}
+.bottom_content{
+    padding: 15px;
+    max-width: 610px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    right: 20;
+    left: 0;
+    margin: auto;
+    
+}
+p {
+    width: 150%;
+    font-size: 20px;
+    margin-top: 12px;
+    max-height: 9px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+
+h2{
+    border:  double;
+    border-color: black;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+     place-items:center ;
+     font-family: "Poppins", sans-serif;
+     font-weight: bold;
+     font-size: 40px;
+     background-color: #201e1e;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the h1 element */
+h2.text-center {
+    animation: wave 4s infinite;
+}
+.about {
+    width: 150px;
+    font-size: 30px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+h4{
+    margin-top: 20%;
+    margin-left: 40%;
+    border-top: 15px;
+    padding-top: 25px;
+    color:#fff;
+    font-size: 30px;
+    width: 500px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.spell-check{
+    margin-top: 15%;
+border-top: 20%;
+border-radius: 5px;
+max-width: 680px;
+margin-left: 32%;
+margin-right: 34%;
+bottom: 0;
+right: 20;
+left: 0;
+}
+
+.spell-abt{
+    margin-top: 15px;
+    margin-right: 20%;
+    text-align: justify;
+
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#scroll-to-top a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#scroll-to-top:hover {
+    background-color: #0056b3;
+}
+

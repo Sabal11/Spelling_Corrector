@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="description" content="ie=edge">
+    <link rel="stylesheet" href="../static/home.css">
+    <title>Spellbot</title>
+</head>
+<body>
+    <div class="head">
+        <h2 class="text-center">Welcome to the SpellBot</h2>
+            
+    </div>
+    
+    <div class="container">
+        <div class="c1">
+            <form action="/spell" method="post">
+                <label for="text">Text Here</label>
+                <textarea class="form-control" rows="35" cols="150" name="text" id="text" placeholder="Write or Paste your text"></textarea>   
+            </form>
+        </div>
+        <div class="c2">
+            <form action="/grammar" method="post">
+                <div class="form-group">
+                    <label for="file">Result</label>
+                    <textarea class="form-control" rows="35" cols="150" id="file" name="file"></textarea>  
+                </div>                
+            </form>
+        </div> 
+    </div>  
+
+    <div class="cont">
+        <div class="bottom_content">
+            <button type="submit" class="btn btn-light">Check</button>
+        <div class="about">SpellBot</div>
+        <p class="mlabout" >
+            Spelling checkers, a ubiquitous tool in our digital world, have greatly benefited from machine learning techniques. In this article, we will explore how machine learning is transforming spelling checkers and making written communication more efficient and error-free.
+
+            Machine learning-powered spelling checkers have elevated the quality of written communication by providing more accurate, context-aware, and user-specific suggestions. As technology continues to evolve, these tools are likely to become an integral part of our daily writing routines, helping us communicate more effectively and efficiently. Embracing this technology can save time, reduce errors, and enhance the overall quality of our written content.
+
+        </p>
+    </div>
+    </div>
+    <div class="spell-check">
+        <h4>Reasons to do a spell check</h4>
+        <p class="spell-abt">
+            Many people are already using it every day, but few think about the importance of this small spelling checker tool. A Spellbot provides a complete analysis of a text, entirely online and automated. This will enable you to correct every error in your texts, making them easier to read and to present.
+            Spellbot is an English Grammar Corrector that allows you to get an Online Grammar Correction simply by pasting the text that you wish to check into the appropriate text box. While its heart beats to the rhythm of complex code, the tool is easy to use and was created to guarantee the best user experience to everyone. Online Grammar Correction is one thing everyone should use before sending an email or a resume. The world is full of typos and small oversights, which could be easily corrected with a simple Online Spelling Checker.
+        </p>
+
+    </div>
+    <div id="scroll-to-top">
+        <a href="#top">Scroll to Top</a>
+    </div>
+
+</body>
+
+{% endblock %}
