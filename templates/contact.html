@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
-{% block content %}
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <link rel="stylesheet" href="./static/contact.css" />
-      <script src="./static/contact.js"></script>
-      <title>Spellbot</title>
-    </head>
+{% load static %}
 
-    <body>
+{% block title %}Contact Us{% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="../static/contact.css">
+    <script src="{../static/contact.js"></script>
+{% endblock extrahead %}
+
+{% block content %}
+    <div class="container">
       <div class="first">
         <h1><strong>How can we help ?</strong></h1>
         <p>Send us a message or question and we'll help you as soon as we can.</p>
@@ -36,7 +36,6 @@
             </form>
         </div>
       </div>
-    </body>
-  </html>
+    </div>
 
-  {% endblock %}
+  {% endblock content %}

@@ -1,22 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("pic\ 2.jpg");
+    margin-top: 20px;
+}
 
 header {
-    
-    background-color: rgb(246, 241, 241);
-    color: #42e415;
-    padding: 15px 0;
     position: absolute;
     width: 100%;
     top:0;
-}
-
-.container {
-    position:absolute;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #333;
 }
 
 #logo img {
@@ -36,7 +44,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     position: relative;
 }
 
@@ -57,8 +65,3 @@ a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
-
-
- 

@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-image: url("pic\ 2.jpg");
-  margin-top: 20px;
+.container {
+  padding-top: 50px;
 }
 
 .first h1 {
@@ -35,6 +24,7 @@ body {
   padding: 25px;
   border-radius: 5px;
   margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper h2 {
@@ -62,14 +52,11 @@ body {
 
 .wrapper .btn input[type="submit"] {
   border: 0px;
-  margin-top: 10px;
   padding: 10px;
   text-align: center;
   width: 100%;
   background: #ADFF2F;
   color: black;
-  letter-spacing: 5px;
-  font-weight: bold;
   border-radius: 25px;
   cursor: pointer;
 }

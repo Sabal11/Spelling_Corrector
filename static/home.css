@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 body{
-    padding: 20px;
     background-color:#499557;
     color: white;
 }
+
 .container {
     display: flex;
     column-gap: 15px;
+    width: 100%;
 }
+
 text{
- width: 40px;
- font-weight: bold;
+    width: 40px;
+    font-weight: bold;
 }
 
 textarea{
@@ -20,133 +22,75 @@ textarea{
     width: 200%;
     resize: none;
 }
+
 .form-control{
     border: solid;
     border-color: gray;
+}
 
-}
-.btn{
-    margin-left: 570px;
-}
 .btn-primary{
     margin-top: 10px;
-    width:fit-content;
+    width: fit-content;
     padding-top: 60%;
 }
 
-.c1 {
+.column-c1 {
     width: 50%;
     height: 200px;
     float: left;
-    border-right: #ffffff00;
+    border-right: #ffffff;
     padding: 2px 2px 8px;
     font-size: 16px;
 }
-.c2 {
+
+.column-c2 {
     width: 50%;
-    height: 200px;
     float: right;
     column-gap: normal;
     padding: 2px 2px 8px;
 }
 
-.cont {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 15px;
-    border-radius: 5px;
-    min-height: 90vh;
-    
-    position:relative
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .bottom_content{
-    padding: 15px;
-    max-width: 610px;
-    border-radius: 5px;
-    position:absolute;
-    bottom: 0;
-    right: 20;
-    left: 0;
-    margin: auto;
-    
+    padding: 20px 200px;
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
 }
-p {
-    width: 150%;
+
+.about {
+    font-size: 30px;
+    color: #fbfbfb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cont p {
     font-size: 20px;
     margin-top: 12px;
-    max-height: 9px;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-}
-
-h2{
-    border:  double;
-    border-color: black;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+    color: #fbfbfb;
     text-align: center;
-    height: 100px;
-    display: grid;
-    justify-content: center;
-     place-items:center ;
-     font-family: "Poppins", sans-serif;
-     font-weight: bold;
-     font-size: 40px;
-     background-color: #201e1e;
 }
 
-@keyframes wave {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Apply animation to the h1 element */
-h2.text-center {
-    animation: wave 4s infinite;
-}
-.about {
-    width: 150px;
-    font-size: 30px;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-}
-h4{
-    margin-top: 20%;
-    margin-left: 40%;
-    border-top: 15px;
-    padding-top: 25px;
-    color:#fff;
-    font-size: 30px;
-    width: 500px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-}
 .spell-check{
-    margin-top: 15%;
-border-top: 20%;
-border-radius: 5px;
-max-width: 680px;
-margin-left: 32%;
-margin-right: 34%;
-bottom: 0;
-right: 20;
-left: 0;
+    display: block;
+    padding: 20px 200px;
+    align-items: center;
+    text-align: center;
 }
 
 .spell-abt{
+    display: block;
     margin-top: 15px;
     margin-right: 20%;
     text-align: justify;
-
 }
 
 #scroll-to-top {
@@ -170,5 +114,40 @@ left: 0;
 
 #scroll-to-top:hover {
     background-color: #0056b3;
+}
+
+h2{
+    border:  double;
+    border-color: black;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    place-items:center ;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #201e1e;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the h1 element */
+h2.text-center {
+    margin-top: 50px;
+    animation: wave 4s infinite;
 }
 
