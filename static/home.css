@@ -89,27 +89,7 @@ textarea{
 .spell-abt{
     display: block;
     margin-top: 15px;
-    margin-right: 20%;
     text-align: justify;
-}
-
-#scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-    z-index: 999;
-}
-
-#scroll-to-top a {
-    text-decoration: none;
-    color: #fff;
 }
 
 #scroll-to-top:hover {
@@ -150,4 +130,16 @@ h2.text-center {
     margin-top: 50px;
     animation: wave 4s infinite;
 }
+ 
+/*scroll function*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
 

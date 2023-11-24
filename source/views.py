@@ -9,3 +9,5 @@ def about (request):
 
 def contact (request):
     return render (request, "contact.html")
+def click (request):
+    return render (request, "contact.html")
