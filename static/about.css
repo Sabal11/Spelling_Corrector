@@ -2,32 +2,15 @@ body{
     background-color: #499557    ;
 }
 section{
-    /* text-align: center; */
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 80px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
     
 }
 
-.header {
-    background-color: transparent;
-    color: #42e415;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top:0;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 25px;
-}
 .team {
     font-size: 16px;
   }
@@ -44,6 +27,7 @@ section{
   
   .team-member-name {
     font-weight: bold;
+    color:white;
   }
   div p{
     color: rgb(238, 227, 227);
@@ -53,6 +37,7 @@ section{
   }
   h2{
     text-align: center;
+    color:white;
   }
 
   

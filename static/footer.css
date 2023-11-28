@@ -1,8 +1,9 @@
 .logo img {
-    height: 70px;
-    width: 100px;
+    height:120px;
+    width: 130px;
     margin: 100px left;
     image-rendering: 50px;
+    margin-top:30px;
 }
 
 footer {
@@ -21,6 +22,7 @@ footer {
 
 .column-2 {
     margin-right: 50px;
+    margin-top: 15px;
 }
 
 .column-3 {
@@ -54,7 +56,7 @@ footer {
     height: 40px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0px;
+    margin: 0 3px 3px 3px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -66,6 +68,7 @@ footer {
     color: #24262b;
     background-color: #ffffff;
 }
+
 
 /*responsive*/
 @media(max-width: 767px) {
