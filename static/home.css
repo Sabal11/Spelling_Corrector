@@ -127,8 +127,8 @@ h2{
 
 /* Apply animation to the h1 element */
 h2.text-center {
-    margin-top: 50px;
-    animation: wave 4s infinite;
+    margin-top: 60px;
+    animation: wave 3s infinite;
 }
  
 /*scroll function*/
