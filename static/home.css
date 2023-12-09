@@ -7,7 +7,7 @@ body{
 
 .container {
     display: flex;
-    column-gap: 15px;
+    column-gap: 25px;
     width: 100%;
 }
 
@@ -53,7 +53,9 @@ textarea{
 .submit {
     display: flex;
     justify-content: center;
+    margin-left: 120px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .bottom_content{
@@ -131,14 +133,6 @@ h2.text-center {
     animation: wave 3s infinite;
 }
  
-/*scroll function*/
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
 
 
 
