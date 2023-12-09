@@ -11,38 +11,6 @@ section{
   
 }
 
-<<<<<<< HEAD
-.team {
-  font-size: 18px;
-}
-
-.team-list {
-  list-style: none;
-  padding: 0;
-}
-
-.team-list li {
- 
-  margin-bottom: 10px;
-}
-
-.team-member-name {
-  font-weight: bold;
-  color:white;
-}
-div p{
-  color: rgb(238, 227, 227);
-}
-.about{
-  padding: 20px;
-}
-h2{
-  text-align: center;
-  color:white;
-}
-
-=======
-
 .member{
   display: flex;
   justify-content: space-around;
@@ -68,5 +36,4 @@ h2{
     text-align: center;
     color:white;
   }
->>>>>>> 851c0043bf7c1ef89e6eefa623d4b649b7dcc9ae
 
