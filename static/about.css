@@ -11,6 +11,7 @@ section{
   
 }
 
+<<<<<<< HEAD
 .team {
   font-size: 18px;
 }
@@ -40,4 +41,32 @@ h2{
   color:white;
 }
 
+=======
+
+.member{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: left;
+  font-size: 17px;
+  color: white;
+}
+
+.column{
+  margin-right: 50px;
+  width: 33.33%;
+}
+
+
+  div p{
+    color: rgb(238, 227, 227);
+  }
+  .about{
+    padding: 20px;
+  }
+  h2{
+    text-align: center;
+    color:white;
+  }
+>>>>>>> 851c0043bf7c1ef89e6eefa623d4b649b7dcc9ae
 
