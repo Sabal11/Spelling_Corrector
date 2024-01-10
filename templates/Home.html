@@ -6,7 +6,22 @@
 
 {% block extrahead %}
     <link rel="stylesheet" href="../static/home.css">
-    <script src="{%/static/home.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const textArea = document.getElementById('Text');
+          const charCountSpan = document.getElementById('charCount');
+          const wordCountSpan = document.getElementById('wordCount');
+    
+          textArea.addEventListener('input', () => {
+            const text = textArea.value.trim();
+            const charCount = text.length;
+            const wordCount = text === '' ? 0 : text.split(/\s+/).length;
+            
+            charCountSpan.textContent = charCount;
+            wordCountSpan.textContent = wordCount;
+          });
+        });
+    </script>
     
 {% endblock extrahead %}
 
@@ -18,8 +33,10 @@
     <div class="container">
         <div class="column-c1">
             <form action="/spell" method="post">
-                <label for="text">Text Here</label>
-                <textarea class="form-control" rows="16.5" cols="100" name="text" id="text" placeholder="Write or Paste your text"></textarea>   
+                <label for="inputText">Text Here</label><br>
+                <textarea class="form-control" rows="16.5" cols="100" name="text" id="Text" placeholder="Write or Paste your text"></textarea>   
+                <p>Word count: <span id="wordCount">0</span></p>
+                <p>Character count: <span id="charCount">0</span></p>
             </form>
         </div>
         <div class="column-c2">
@@ -39,14 +56,13 @@
     <div class="cont">
         <div class="bottom_content">
             <h3>SpellBot</h3>
-
             <p class="mlabout" >
                 Spelling checkers, a ubiquitous tool in our digital world, have greatly benefited from machine learning techniques. In this article, we will explore how machine learning is transforming spelling checkers and making written communication more efficient and error-free.
-
                 Machine learning-powered spelling checkers have elevated the quality of written communication by providing more accurate, context-aware, and user-specific suggestions. As technology continues to evolve, these tools are likely to become an integral part of our daily writing routines, helping us communicate more effectively and efficiently. Embracing this technology can save time, reduce errors, and enhance the overall quality of our written content.
             </p>
         </div>
-
+    
+        
         <div class="spell-check">
             <h3>Reasons to do a spell check</h3>
 

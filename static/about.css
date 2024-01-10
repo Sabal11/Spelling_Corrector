@@ -1,5 +1,5 @@
 body{
-  background-color: #499557    ;
+  background-color: #499557;
 }
 section{
   font-size: 18px;
@@ -10,7 +10,6 @@ section{
   text-align: justify;
   
 }
-
 .member{
   display: flex;
   justify-content: space-around;
@@ -19,13 +18,10 @@ section{
   font-size: 17px;
   color: white;
 }
-
 .column{
   margin-right: 50px;
   width: 33.33%;
 }
-
-
   div p{
     color: rgb(238, 227, 227);
   }
@@ -35,5 +31,27 @@ section{
   h2{
     text-align: center;
     color:white;
+  } 
+  .member img {
+    border-radius: 50%;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    
+}
+  .member h1{
+    border-bottom: 10px;
+    font-size: x-large;
+    text-align: center;
+  }
+  .member h2{
+    border-bottom: 10px;
+    font-size: large;
+    text-align: center;
+  }
+  .member h3{
+    border-bottom: 10px;
+    font-size: medium;
+    text-align: center;
   }
 
