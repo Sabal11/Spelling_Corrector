@@ -14,9 +14,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# source/urls.py
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from source import views
+from spelling_corrector.views import check_spelling  # Correct the import statement
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +27,7 @@ urlpatterns = [
     path('aboutus', views.about),
     path('contactus', views.contact),
     path('contactus', views.click),
-
+    path('check_spelling/', check_spelling, name='check_spelling'),
+    path('spelling_corrector/', include('spelling_corrector.urls')),
 ]
+
