@@ -21,6 +21,29 @@
             wordCountSpan.textContent = wordCount;
           });
         });
+        function checkSpelling() {
+            // Get the text from the textarea with id "Text"
+            const inputText = document.getElementById('Text').value;
+
+            // Log the inputText to the console for debugging
+            console.log('Input Text:', inputText);
+        
+            // Send a POST request to the Django backend
+            fetch('http://localhost:8000/spelling_corrector/check_spelling/', {  
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: inputText }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Set the corrected text to the value of the textarea with id "file"
+                document.getElementById('file').value = data.corrected_text;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
     </script>
     
 {% endblock extrahead %}
@@ -32,26 +55,30 @@
     
     <div class="container">
         <div class="column-c1">
-            <form action="/spell" method="post">
+            <form id="spellingForm" action="{% url 'check_spelling' %}" method="post" enctype="multipart/form-data">
                 <label for="inputText">Text Here</label><br>
+<<<<<<< HEAD
              e   <textarea class="form-control" rows="16.5" cols="100" name="text" id="Text" placeholder="Write or Paste your text"></textarea>   
+=======
+                <textarea class="form-control" rows="16.5" cols="100" name="text" id="Text" placeholder="Write or Paste your text"></textarea> 
+                <div class="submit">  
+                <button type="submit" class="btn btn-light" onclick="checkSpelling">Check</button></div>
+>>>>>>> 965d053c9a469967fd4da0c83f9fa4e103fcc776
                 <p>Word count: <span id="wordCount">0</span></p>
                 <p>Character count: <span id="charCount">0</span></p>
+                
             </form>
         </div>
         <div class="column-c2">
-            <form action="/grammar" method="post">
                 <div class="form-group">
                     <label for="file">Result</label>
-                    <textarea class="form-control" rows="16.5" cols="100" id="file" name="file"></textarea>  
+                    <textarea  class="form-control" rows="16.5" cols="100" id="file" name="file" readonly>{{input_text}}
+                    </textarea>   
+
                 </div>                
             </form>
         </div> 
-    </div>
-
-    <div class="submit">
-        <button type="submit" class="btn btn-light">Check</button>
-    </div>
+    </div> 
 
     <div class="cont">
         <div class="bottom_content">

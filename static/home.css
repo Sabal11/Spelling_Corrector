@@ -50,7 +50,7 @@ textarea{
     padding: 2px 2px 8px;
 }
 
-.submit {
+.button {
     display: flex;
     justify-content: center;
     margin-left: 120px;
@@ -73,7 +73,9 @@ textarea{
     font-weight: bold;
     text-align: center;
 }
-
+.cont{
+    margin-top: 10px;
+}
 .cont p {
     font-size: 20px;
     margin-top: 12px;
